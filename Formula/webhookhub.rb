@@ -5,21 +5,21 @@
 class Webhookhub < Formula
   desc "Tunnel webhooks captured at a stable WebhookHub URL down to your local server"
   homepage "https://webhookhub.dev"
-  version "0.3.1-alpha"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v0.3.1-alpha/webhookhub_0.3.1-alpha_darwin_amd64.tar.gz"
-      sha256 "04b06041b988fe0a43675b6a847be2c20255c517be818a9bebff3c475665f35a"
+      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_darwin_amd64.tar.gz"
+      sha256 "1a304d2085c963168c84753b124fc0e27f30cf58f8a240f3ab333866b272d58a"
 
       define_method(:install) do
         bin.install "webhookhub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v0.3.1-alpha/webhookhub_0.3.1-alpha_darwin_arm64.tar.gz"
-      sha256 "06853cc2dcfd59cbb053e9e24cca123fbcf3aec17067cf7533eac182d93a9d92"
+      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_darwin_arm64.tar.gz"
+      sha256 "6c87efd6f24dcf2f0a3bfa446bf14e00ebb1e6b38be063d6a833c68adfe65c1d"
 
       define_method(:install) do
         bin.install "webhookhub"
@@ -29,15 +29,15 @@ class Webhookhub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v0.3.1-alpha/webhookhub_0.3.1-alpha_linux_amd64.tar.gz"
-      sha256 "40ca85c449c59d39d5f3528ba2dd2ca5c590d2d9a46608e363b5ced46bc1efb6"
+      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_linux_amd64.tar.gz"
+      sha256 "366c23c20c99f86bbf4e1cc487baa8d155c02ec59ab89324336151792357c391"
       define_method(:install) do
         bin.install "webhookhub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v0.3.1-alpha/webhookhub_0.3.1-alpha_linux_arm64.tar.gz"
-      sha256 "785860193b5ee7d4ab158d6844304201f849ad4b4a7957f89a89d631e0d1d1ea"
+      url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_linux_arm64.tar.gz"
+      sha256 "bf5f95525391076c809ef3b1816cbe5a856f3e56c95e6ff9927fc394ec168078"
       define_method(:install) do
         bin.install "webhookhub"
       end
