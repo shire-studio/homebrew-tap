@@ -11,7 +11,7 @@ class Webhookhub < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_darwin_amd64.tar.gz"
-      sha256 "1a304d2085c963168c84753b124fc0e27f30cf58f8a240f3ab333866b272d58a"
+      sha256 "fa28ab8ab20e5d0c886173ea6d77c764d8f4c1de23ff658a2dbcfd9a3a4e438a"
 
       define_method(:install) do
         bin.install "webhookhub"
@@ -19,7 +19,7 @@ class Webhookhub < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_darwin_arm64.tar.gz"
-      sha256 "6c87efd6f24dcf2f0a3bfa446bf14e00ebb1e6b38be063d6a833c68adfe65c1d"
+      sha256 "8eada3ea1e93aa7e51cb0f8b5537052cddbc6f91f2c1ca9844e075dab64e1e38"
 
       define_method(:install) do
         bin.install "webhookhub"
@@ -30,14 +30,14 @@ class Webhookhub < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_linux_amd64.tar.gz"
-      sha256 "366c23c20c99f86bbf4e1cc487baa8d155c02ec59ab89324336151792357c391"
+      sha256 "0daa4c5ed0dd2a6662281799db598e9800289720c131c13bdead5a6542855f1b"
       define_method(:install) do
         bin.install "webhookhub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/shire-studio/webhookhub-cli/releases/download/v1.0.0/webhookhub_1.0.0_linux_arm64.tar.gz"
-      sha256 "bf5f95525391076c809ef3b1816cbe5a856f3e56c95e6ff9927fc394ec168078"
+      sha256 "a45c47dc8dd092ccf03601b482eae9b3edf7dabad16ebfdfc7dab93e12d5b674"
       define_method(:install) do
         bin.install "webhookhub"
       end
